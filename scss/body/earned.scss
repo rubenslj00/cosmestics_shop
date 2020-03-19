@@ -1,0 +1,132 @@
+.content--earned {
+  border: 1px solid rgb(201, 201, 201);
+  background-color: white;
+  margin-bottom: 80px;
+  box-shadow: $beauty-shadow;
+
+  &__head {
+    height: 50px;
+    line-height: 50px;
+    background-color: $light-green;
+    color: white;
+    padding: 0 30px;
+    font-size: 1rem;
+  }
+
+  form {
+    display: block;
+    padding: 30px 30px;
+    grid-row-gap: 15px !important;
+    p {
+      font-weight: 500;
+      color: $main-text-color;
+      margin-bottom: 5px;
+    }
+
+    select {
+      height: 40px;
+      border-radius: 5px;
+      transition: 0.2s;
+
+      option {
+        height: 40px;
+      }
+      &:focus {
+        outline: none;
+        border: 1px solid $orange;
+      }
+    }
+
+    .earned-input {
+      position: relative;
+      display: flex;
+      align-items: center;
+      margin-bottom: 10px;
+      label {
+        display: block;
+        padding-bottom: 5px;
+        font-size: 0.9rem;
+        min-width: 100px;
+      }
+      i {
+        display: block;
+        font-size: 50px;
+        color: $light-green;
+      }
+      input {
+        width: 100%;
+        height: 40px !important;
+        padding: 0 10px;
+        border: 1px solid #e4e4e4;
+        transition: 0.2s;
+        border-radius: 5px;
+        &:focus {
+          border: 1px solid $orange;
+          outline: none;
+        }
+        &[type="date"] {
+          -webkit-appearance: none;
+          &::-webkit-calendar-picker-indicator {
+            display: block;
+          }
+          &::-webkit-inner-spin-button {
+            display: none;
+          }
+        }
+        &[type="file"] {
+          position: absolute;
+          opacity: 0;
+          width: 100%;
+          height: 100%;
+          top: 0;
+          cursor: pointer;
+        }
+      }
+    }
+    button {
+      margin-top: 30px;
+      letter-spacing: 1px;
+      @include main-btn;
+    }
+  }
+  .list-earned {
+    width: 100%;
+    text-align: left;
+    padding: 20px;
+
+    .row {
+      &:first-child {
+        position: sticky;
+        top: 50px;
+        background-color: white;
+      }
+      grid-gap: 0;
+      th,
+      td {
+        padding: 10px 0px;
+        border-bottom: 1px solid #dadada;
+        font-size: 0.9rem;
+        color: rgb(87, 87, 87);
+      }
+    }
+  }
+  .table-pagination {
+    padding: 20px 30px;
+    a {
+      color: gray;
+      font-size: 0.7rem;
+      padding: 5px 10px;
+      transition: 0.3s;
+      border: 1px solid #c5c5c5;
+      i {
+        padding: 0 4px;
+      }
+      &:hover {
+        background-color: $dark-green;
+        transform: scale(1.5);
+        color: white;
+        box-shadow: 0 0 5px rgb(223, 223, 223);
+      }
+    }
+  }
+}

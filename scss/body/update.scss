@@ -1,0 +1,115 @@
+.content--update {
+  border: 1px solid rgb(201, 201, 201);
+  background-color: white;
+  margin-bottom: 80px;
+  box-shadow: $beauty-shadow;
+
+  &__head {
+    height: 50px;
+    line-height: 50px;
+    background-color: $light-green;
+    color: white;
+    padding: 0 30px;
+    font-size: 1rem;
+  }
+
+  form {
+    display: block;
+    padding: 30px 30px;
+    grid-row-gap: 15px !important;
+    p {
+      font-weight: 500;
+      color: $main-text-color;
+      margin-bottom: 5px;
+    }
+
+    select {
+      height: 40px;
+      border-radius: 5px;
+      transition: 0.2s;
+
+      option {
+        height: 40px;
+      }
+      &:focus {
+        outline: none;
+        border: 1px solid $orange;
+      }
+    }
+
+    .update-input {
+      position: relative;
+
+      &.ava-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        img {
+          width: 100px;
+          height: 100px;
+          border-radius: 50%;
+          object-fit: cover;
+        }
+        .change-img {
+          height: max-content;
+          margin-left: 10px;
+        }
+      }
+      label {
+        display: block;
+        padding-bottom: 5px;
+        font-size: 0.9rem;
+      }
+      img {
+        display: block;
+        width: 50px;
+        height: 50px;
+        object-fit: cover;
+      }
+      .change-img {
+        position: relative;
+        margin-top: 10px;
+        padding: 10px 10px;
+        border: 1px solid $main-text-color;
+        width: fit-content;
+        border-radius: 5px;
+      }
+      input {
+        width: 100%;
+        height: 40px;
+        padding: 0 10px;
+        border: 1px solid #e4e4e4;
+        transition: 0.2s;
+        border-radius: 5px;
+        &:focus {
+          border: 1px solid $orange;
+          outline: none;
+        }
+        &[type="date"] {
+          -webkit-appearance: none;
+          &::-webkit-calendar-picker-indicator {
+            display: block;
+          }
+          &::-webkit-inner-spin-button {
+            display: none;
+          }
+        }
+        &[type="file"] {
+          position: absolute;
+          opacity: 0;
+          width: 100%;
+          height: 100%;
+          top: 0;
+          left: 0;
+          cursor: pointer;
+        }
+      }
+    }
+    button {
+      margin-top: 30px;
+      letter-spacing: 1px;
+      @include main-btn;
+    }
+  }
+}

@@ -1,0 +1,54 @@
+.content__home {
+  .user__info {
+    box-shadow: $beauty-shadow;
+    background-color: white;
+    margin-bottom: 30px;
+    .row {
+      .user__info--login-time {
+        display: flex;
+        padding: 15px;
+        align-items: center;
+        img {
+          height: 60px;
+          width: 60px;
+          display: block;
+          object-fit: cover;
+          background-color: $light-green;
+          padding: 5px;
+          border-radius: 5px;
+          margin-right: 10px;
+        }
+        .login-time__text {
+          h5 {
+            font-size: 0.8rem;
+          }
+          span {
+            font-size: 0.8rem;
+            color: $orange;
+          }
+        }
+      }
+    }
+  }
+  .user__info--rank {
+    max-width: 500px;
+    box-shadow: $beauty-shadow;
+    background-color: white;
+    .user-rank {
+      span {
+        display: flex;
+        padding: 20px;
+        justify-content: space-between;
+        p:first-child {
+          padding-right: 30px;
+          width: 250px;
+        }
+        &:first-child {
+          p:last-child {
+            color: gold;
+          }
+        }
+      }
+    }
+  }
+}

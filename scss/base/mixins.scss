@@ -1,0 +1,39 @@
+@mixin resposive-value {
+  @for $i from 1 to 13 {
+    &-#{$i} {
+      grid-column-end: span #{$i};
+    }
+  }
+}
+
+@mixin main-btn {
+  border: none;
+  background-color: $dark-green;
+  padding: 10px 20px;
+  outline: none;
+  box-shadow: none;
+  cursor: pointer;
+  color: white;
+  transition: 0.2s;
+  &:hover {
+    box-shadow: $beauty-shadow;
+    transform: translate(-1px, -1px);
+  }
+}
+
+@mixin aspect-ratio($percent) {
+  .aspect-ratio-container {
+    width: 100%;
+    padding-top: $percent;
+    position: relative;
+    img,
+    iframe {
+      object-fit: cover;
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+  }
+}

@@ -1,0 +1,31 @@
+.main-nav {
+  margin-top: 50px;
+  width: 100%;
+  background-color: white;
+  display: none;
+  .nav-container {
+    display: flex;
+    max-width: 1170px;
+    margin: 0 auto;
+    .logo {
+      margin-right: auto;
+      display: flex;
+      align-items: center;
+    }
+    a {
+      display: block;
+      padding: 35px 20px;
+      color: $main-text-color;
+      font-weight: 500;
+      font-size: 0.9rem;
+      transition: 0.3s;
+      &:hover {
+        color: $light-green;
+      }
+    }
+  }
+
+  @media only screen and (min-width: $layout-breakpoint-sm) {
+    display: block;
+  }
+}

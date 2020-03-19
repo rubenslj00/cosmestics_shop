@@ -1,0 +1,16 @@
+.web-body {
+  max-width: 1170px;
+  padding-top: 30px;
+  margin: 0 auto;
+  min-height: calc(100vh - 140px - 38px);
+  .row {
+    grid-gap: 30px;
+  }
+}
+
+@media only screen and (max-width: $layout-breakpoint-sm) {
+  .web-body {
+    margin-top: 50px;
+    padding: 20px;
+  }
+}

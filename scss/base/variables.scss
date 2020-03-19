@@ -1,0 +1,18 @@
+//responsive variables mobile first
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&display=swap&subset=vietnamese");
+
+$layout-breakpoint-xs: 0px;
+$layout-breakpoint-sm: 768px;
+$layout-breakpoint-md: 992px;
+$layout-breakpoint-lg: 1200px;
+
+$light-green: rgb(65, 184, 131);
+$dark-green: rgb(62, 134, 194);
+$dark-gray: #f6f6f6;
+$orange: #f96332;
+
+$main-text-color: black;
+
+$main-font: "Roboto", sans-serif;
+
+$beauty-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1), -3px -3px 10px white;

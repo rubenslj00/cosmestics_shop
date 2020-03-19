@@ -1,0 +1,41 @@
+footer {
+  background-color: $light-green;
+  padding: 10px 20px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  .footer--left {
+    color: white;
+  }
+  .footer--center {
+    text-align: center;
+    a {
+      display: inline-block;
+      color: white;
+      font-size: 0.9rem;
+      padding: 0 10px;
+      border-right: 1px solid yellow;
+      &:last-child {
+        border-right: none;
+      }
+    }
+  }
+  .footer--right {
+    text-align: right;
+    a {
+      padding: 0 5px;
+      color: white;
+    }
+  }
+
+  @media only screen and (max-width: $layout-breakpoint-sm) {
+    .footer--left {
+      text-align: center;
+      padding-bottom: 10px;
+    }
+    .footer--right {
+      text-align: center;
+      padding-top: 10px;
+    }
+  }
+}

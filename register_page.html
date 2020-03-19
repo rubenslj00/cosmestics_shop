@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <div class="web-container">
+        <header>
+            <div class="header-container">
+                <div class="mobile-menu">
+                    <i class="fas fa-bars"></i>
+
+                </div>
+                <div class="header-left">
+                    <a class="header-left__lang" href="#">VN</a>
+                    <a class="header-left__lang" href="#">EN</a>
+                    <div class="header-left__home-link">
+                        <a href="#"></a>
+                        <i class="fas fa-envelope"></i>
+                        cskh@MyPhamBeautyQueen.com
+                    </div>
+                    <span class="header-left__date-time">datetime here</span>
+                </div>
+                <div class="header-right">
+                    <div class="header-right__cart">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span>Giỏ hàng</span>
+                        <i class="fas fa-caret-down    "></i>
+                    </div>
+                    <div class="header-right__user-info">
+                        <img src="./img/tran-thi-tinhfb_img_1547905341438.jpg" alt="avatar"
+                            class="header-right__user-info--avatar">
+                        <span>USER12318937</span>
+                        <i class="fas fa-caret-down    "></i>
+                    </div>
+                    <button type="submit">
+                        Thoát
+                    </button>
+                </div>
+            </div>
+        </header>
+        <nav class="main-nav">
+            <div class="nav-container">
+                <div class="logo">
+                    LOGO
+                </div>
+                <a href="#">TRANG CHỦ</a>
+                <a href="#">ĐĂNG KÝ</a>
+                <a href="#">THÔNG TIN CÁ NHÂN</a>
+                <a href="#">HOA HỒNG</a>
+            </div>
+        </nav>
+
+        <div class="web-body responsive">
+            <div class="row">
+                <div class="menu col-sm-3">
+
+                    <div class="menu-item">
+                        <i class="fas fa-home    "></i>
+                        <span>TRANG CHỦ</span>
+                        <a href="./home_page.html"></a>
+                    </div>
+                    <div class="menu-item active">
+                        <i class="fas fa-registered    "></i>
+                        <span>ĐĂNG KÝ</span>
+                        <a href="./register_page.html"></a>
+                    </div>
+                    <div class="menu-item">
+                        <i class="fas fa-info-circle    "></i>
+                        <span>THÔNG TIN NGƯỜI DUNG</span>
+                        <a href="./update_user.html"></a>
+                    </div>
+                    <div class="menu-item">
+                        <i class="fas fa-cart-plus    "></i>
+                        <span>SẢN PHẨM</span>
+                        <a href="./products_page.html"></a>
+                    </div>
+                    <div class="menu-item">
+                        <i class="fas fa-sitemap    "></i>
+                        <span>CÂY GIỚI THIỆU</span>
+                        <a href="./tree_view.html"></a>
+                    </div>
+                    <div class="menu-item">
+                        <i class="fas fa-suitcase    "></i>
+                        <span>LỢI NHUẬN</span>
+                        <a href="./earned_page.html"></a>
+                    </div>
+                    <div class="menu-item">
+                        <i class="fas fa-user    "></i>
+                        <span>LỊCH SỬ MUA HÀNG</span>
+                        <a href="./shopping_history.html"></a>
+                    </div>
+                    <div class="menu-item">
+                        <i class="fas fa-envelope    "></i>
+                        <span>TIN NHẮN</span>
+                        <a href="./mail_box.html"></a>
+                    </div>
+                    <div class="menu-item">
+                        <i class="fas fa-sign-out-alt    "></i>
+                        <span>ĐĂNG XUẤT</span>
+                        <a href="#"></a>
+                    </div>
+
+                </div>
+                <div class="content col-sm-9 col-xs-12">
+                    <div class="content--register respinsive">
+                        <div class="content--register__head">
+                            ĐĂNG KÝ
+                        </div>
+                        <form class="row">
+                            <div class="col-sm-3 col-xs-12">
+                                <p>Mẫu tên đăng nhập</p>
+                            </div>
+                            <div class="col-sm-9 col-xs-12">
+                                <p>Mã khu vực_họ và tên - 2 số cuối năm sinh – chữ cái đầu của tỉnh thành <br>
+                                    VD: SS_HUYNHKIMTIN92BP</p>
+                            </div>
+
+                            <div class="col-sm-6 col-xs-12 register-input">
+                                <label for="">Tên đăng nhập</label>
+                                <input type="text" name="username" id="">
+                            </div>
+                            <div class="col-sm-6 col-xs-12 register-input">
+                                <label for="">Người giới thiệu</label>
+                                <input type="text" name="presenter" id="">
+                            </div>
+
+                            <div class="col-sm-6 col-xs-12 register-input">
+                                <label for="">Mật khẩu</label>
+                                <input type="password" name="pasword" id="">
+                            </div>
+
+                            <div class="col-sm-6 col-xs-12 register-input">
+                                <label for="">Nhập lại mật khẩu</label>
+                                <input type="password" name="re_password" id="">
+                            </div>
+
+                            <div class="col-sm-6 col-xs-12 register-input">
+                                <label for="">Họ tên</label>
+                                <input type="text" name="full_name" id="">
+                            </div>
+
+                            <div class="col-sm-6 col-xs-12 register-input">
+                                <label for="">Email</label>
+                                <input type="email" name="email" id="">
+                            </div>
+
+                            <div class="col-sm-6 col-xs-12 register-input">
+                                <label for="">Số CMT</label>
+                                <input type="number" name="no_cmt" id="">
+                            </div>
+
+                            <div class="col-sm-3 col-xs-6 register-input">
+                                <label for="">Ngày cấp</label>
+                                <input type="date" name="date_range" id="">
+                            </div>
+
+                            <div class="col-sm-3 col-xs-6 register-input">
+                                <label for="">Nơi cấp</label>
+                                <input type="text" name="place_of_issue" id="">
+                            </div>
+
+                            <div class="col-sm-6 col-xs-12 register-input">
+                                <label for="">CMT mặt trước</label>
+                                <input type="file" name="CMT_front" id="">
+                                <i class="fas fa-camera"></i>
+                            </div>
+
+                            <div class="col-sm-6 col-xs-12 register-input">
+                                <label for="">CMT mặt sau</label>
+                                <input type="file" name="CMT_backside" id="">
+                                <i class="fas fa-camera"></i>
+                            </div>
+
+                            <div class="col-sm-6 col-xs-12 register-input">
+                                <label for="">Địa chỉ</label>
+                                <select name="area" id="">
+                                    <option value="">--Chọn khu vực--</option>
+                                    <option value="Tổng công ty">Tổng công ty</option>
+                                </select>
+                            </div>
+
+                            <div class="col-sm-6 col-xs-12 register-input">
+                                <label for="">Địa chỉ</label>
+                                <input type="text" name="address" id="">
+                            </div>
+
+                            <div class="col-sm-6 col-xs-12 register-input">
+                                <label for="">Ngày sinh</label>
+                                <input type="date" name="birthday" id="">
+                            </div>
+
+                            <div class="col-sm-6 col-xs-12 register-input">
+                                <label for="">Số điện thoại</label>
+                                <input type="text" name="phone_number" id="">
+                            </div>
+
+                            <div class="col-sm-6 col-xs-12 register-input">
+                                <label for="">Ngân hàng</label>
+                                <select name="BankId">
+                                    <option value=""> --- --- Select bank</option>
+                                    <option value="15">Bac A Bank - North Asia Commercial Joint Stock Bank</option>
+                                    <option value="4">VP</option>
+                                    <option value="2">Vietcombank</option>
+                                    <option value="1">Agribank</option>
+                                    <option value="10">Maritime Bank</option>
+                                    <option value="5">Viettinbank</option>
+                                    <option value="8">BIDV</option>
+                                    <option value="3">Techcombank</option>
+                                    <option value="6">MB Bank</option>
+                                    <option value="9">Sacombank</option>
+                                    <option value="11">EximBank</option>
+                                    <option value="7">ACB</option>
+                                    <option value="12">SCB - Saigon</option>
+                                    <option value="13">SHB - Saigon-Hanoi</option>
+                                    <option value="14">DAF - East Asia Bank</option>
+                                </select>
+                            </div>
+
+                            <div class="col-sm-6 col-xs-12 register-input">
+                                <label for="">Số tài khoản</label>
+                                <input type="text" name="bank_account" id="">
+                            </div>
+
+                            <div class="col-sm-6 col-xs-12 register-input">
+                                <label for="">Chủ thẻ</label>
+                                <input type="text" name="cardholder" id="">
+                            </div>
+
+                            <div class="col-sm-6 col-xs-12 register-input">
+                                <label for="">Chi nhánh</label>
+                                <input type="text" name="branch" id="">
+                            </div>
+
+                            <div class="col-sm-6 col-xs-12 register-input">
+                                <label for="">Ảnh đại diện</label>
+                                <input type="file" name="avatar" id="">
+                                <i class="fas fa-camera"></i>
+                            </div>
+
+                            <div class="col-xs-12">
+                                <button>Cập nhật</button>
+                            </div>
+
+
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer class="responsive">
+            <div class="row">
+                <div class="footer--left col-sm-4 col-xs-12">
+                    Coppyright by Hamrong Media
+                </div>
+                <div class="footer--center col-sm-4 col-xs-12">
+                    <a href="">OUR WEBSITE</a>
+                    <a href="">EMAIL</a>
+                    <a href="">PHONE</a>
+                    <a href="">MESSAGE</a>
+                </div>
+                <div class="footer--right col-sm-4 col-xs-12">
+                    <a href=""> <i class="fab fa-facebook-f    "></i> </a>
+                    <a href=""><i class="fab fa-twitter    "></i> </a>
+                    <a href=""> <i class="fab fa-youtube    "></i></a>
+                </div>
+            </div>
+        </footer>
+
+
+    </div>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>

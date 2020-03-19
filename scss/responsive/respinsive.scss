@@ -1,0 +1,35 @@
+@mixin resposive-value {
+  @for $i from 0 to 13 {
+    &-#{$i} {
+      grid-column-end: span #{$i};
+    }
+  }
+}
+.responsive {
+  .row {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr); // Thay auto thanh 1fr
+
+    @media only screen and (min-width: $layout-breakpoint-xs) {
+      .col-xs {
+        @include resposive-value;
+      }
+    }
+    @media only screen and (min-width: $layout-breakpoint-sm) {
+      .col-sm {
+        @include resposive-value;
+      }
+    }
+    @media only screen and (min-width: $layout-breakpoint-md) {
+      .col-md {
+        @include resposive-value;
+      }
+    }
+    @media only screen and (min-width: $layout-breakpoint-lg) {
+      .col-lg {
+        @include resposive-value;
+      }
+    }
+  }
+}
