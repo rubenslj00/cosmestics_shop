@@ -10,16 +10,18 @@
     height: max-content;
     border-radius: 5px;
     background-color: white;
+    border: 1px solid gray;
     a {
       display: block;
+      text-align: left !important;
       width: 100%;
-      line-height: 1.5rem;
+      line-height: 1.2rem;
       color: $main-text-color;
       padding: 10px 20px;
-      border: 1px solid gray;
+      border-bottom: 1px solid gray;
       font-size: 0.8rem;
-      i {
-        padding: 0 20px;
+      &:last-child {
+        border-bottom: none;
       }
     }
   }
@@ -61,12 +63,15 @@
         outline: none;
       }
     }
-
-    button {
+    button,
+    .reject {
+      float: right;
+      font-size: 0.9rem;
+      margin-top: 20px;
       background-color: $light-green;
       border: none;
-      padding: 10px 30px;
-      margin-left: 30px;
+      padding: 5px 10px;
+      margin-left: 5px;
       margin-bottom: 30px;
       color: white;
       cursor: pointer;
@@ -78,6 +83,13 @@
       &:focus {
         outline: none;
       }
+    }
+
+    .reject {
+      background-color: orange;
+    }
+    button {
+      margin-right: 10px;
     }
   }
 }

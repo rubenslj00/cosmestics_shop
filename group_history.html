@@ -57,7 +57,6 @@
             </div>
         </nav>
 
-
         <div class="web-body responsive">
             <div class="row">
                 <div class="menu col-sm-3">
@@ -87,7 +86,7 @@
                         <span>CÂY GIỚI THIỆU</span>
                         <a href="./tree_view.html"></a>
                     </div>
-                    <div class="menu-item active">
+                    <div class="menu-item">
                         <i class="fas fa-suitcase    "></i>
                         <span>HOA HỒNG ĐƯỢC HƯỞNG</span>
                         <a href="./earned_page.html"></a>
@@ -98,7 +97,7 @@
                         <a href="./shopping_history.html"></a>
                     </div>
 
-                    <div class="menu-item ">
+                    <div class="menu-item active">
                         <i class="fas fa-user    "></i>
                         <span>LỊCH SỬ NHÓM</span>
                         <a href="./group_history.html"></a>
@@ -117,125 +116,123 @@
 
                 </div>
                 <div class="content col-sm-9 col-xs-12">
-                    <div class="content--earned respinsive">
-                        <div class="content--earned__head">
+                    <div class="content--history respinsive">
+                        <div class="content--history__head">
                             HOA HỒNG ĐƯỢC HƯỞNG
                         </div>
                         <form action="">
 
-                            <div class="earned-input">
-                                <label for="">Từ ngày:</label>
-                                <input type="text" name="from_date" class="earned-input">
+                            <div class="history-input">
+                                <label for="">Từ khóa</label>
+                                <input type="text" name="keyword" class="history-input">
                             </div>
-                            <div class="earned-input">
+
+                            <div class="history-input">
+                                <label for="">Từ ngày:</label>
+                                <input type="text" name="from_date" class="history-input">
+                            </div>
+                            <div class="history-input">
                                 <label for="">Đến ngày:</label>
-                                <input type="text" name="to_date" class="earned-input">
+                                <input type="text" name="to_date" class="history-input">
                             </div>
 
                             <button type="submit">Tìm kiếm</button>
                         </form>
 
-                        <!-- list earned money -->
+                        <!-- list history money -->
                         <div class="result">
 
-                            <table class="list-earned responsive">
+                            <table class="list-history responsive">
                                 <tr class="row">
-                                    <th class="col-sm-6 col-xs-12">Thưởng</th>
-                                    <th class="col-sm-3 col-xs-12">Số tiền</th>
-                                    <th class="col-sm-3 col-xs-12">Ngày</th>
+                                    <th class="col-sm-6 col-xs-12">Thời gian đầu tư</th>
+                                    <th class="col-sm-2 col-xs-12">Số tiền</th>
+                                    <th class="col-sm-2 col-xs-12">Trạng thái</th>
+                                    <th class="col-sm-2 col-xs-12">Chi tiết đơn hàng</th>
+
+                                </tr>
+                                <tr class="row">
+                                    <td class="col-sm-6 col-xs-12">11/03/2020 09:06</td>
+                                    <td class="col-sm-2 col-xs-12">100.000</td>
+                                    <td class="col-sm-2 col-xs-12 state" value="choduyet">Chờ duyệt</td>
+                                    <td class="col-sm-2 col-xs-12"><a href="#">Xem chi tiết</a></td>
+                                </tr>
+                                <tr class="row">
+                                    <td class="col-sm-6 col-xs-12">11/03/2020 09:06</td>
+                                    <td class="col-sm-2 col-xs-12">100.000</td>
+                                    <td class="col-sm-2 col-xs-12 state" value="choduyet">Chờ duyệt</td>
+                                    <td class="col-sm-2 col-xs-12"><a href="#">Xem chi tiết</a></td>
+                                </tr>
+                                <tr class="row">
+                                    <td class="col-sm-6 col-xs-12">11/03/2020 09:06</td>
+                                    <td class="col-sm-2 col-xs-12">100.000</td>
+                                    <td class="col-sm-2 col-xs-12 state" value="choduyet">Chờ duyệt</td>
+                                    <td class="col-sm-2 col-xs-12"><a href="#">Xem chi tiết</a></td>
+                                </tr>
+                                <tr class="row">
+                                    <td class="col-sm-6 col-xs-12">11/03/2020 09:06</td>
+                                    <td class="col-sm-2 col-xs-12">100.000</td>
+                                    <td class="col-sm-2 col-xs-12 state" value="choduyet">Chờ duyệt</td>
+                                    <td class="col-sm-2 col-xs-12"><a href="#">Xem chi tiết</a></td>
+                                </tr>
+                                <tr class="row">
+                                    <td class="col-sm-6 col-xs-12">11/03/2020 09:06</td>
+                                    <td class="col-sm-2 col-xs-12">100.000</td>
+                                    <td class="col-sm-2 col-xs-12 state" value="choduyet">Chờ duyệt</td>
+                                    <td class="col-sm-2 col-xs-12"><a href="#">Xem chi tiết</a></td>
                                 </tr>
 
                                 <tr class="row">
-                                    <td class="col-sm-6 col-xs-12">Thưởng bán hàng F6 từ Di0329255181</td>
-                                    <td class="col-sm-3 col-xs-12">10,000</td>
-                                    <td class="col-sm-3 col-xs-12">03/9/2019</td>
+                                    <td class="col-sm-6 col-xs-12">11/03/2020 09:06</td>
+                                    <td class="col-sm-2 col-xs-12">100.000</td>
+                                    <td class="col-sm-2 col-xs-12 state" value="choduyet">Chờ duyệt</td>
+                                    <td class="col-sm-2 col-xs-12"><a href="#">Xem chi tiết</a></td>
                                 </tr>
                                 <tr class="row">
-                                    <td class="col-sm-6 col-xs-12">Thưởng bán hàng F6 từ Di0329255181</td>
-                                    <td class="col-sm-3 col-xs-12">10,000</td>
-                                    <td class="col-sm-3 col-xs-12">03/9/2019</td>
+                                    <td class="col-sm-6 col-xs-12">11/03/2020 09:06</td>
+                                    <td class="col-sm-2 col-xs-12">100.000</td>
+                                    <td class="col-sm-2 col-xs-12 state" value="thanhcong">Thành công</td>
+                                    <td class="col-sm-2 col-xs-12"><a href="#">Xem chi tiết</a></td>
                                 </tr>
                                 <tr class="row">
-                                    <td class="col-sm-6 col-xs-12">Thưởng bán hàng F6 từ Di0329255181</td>
-                                    <td class="col-sm-3 col-xs-12">10,000</td>
-                                    <td class="col-sm-3 col-xs-12">03/9/2019</td>
+                                    <td class="col-sm-6 col-xs-12">11/03/2020 09:06</td>
+                                    <td class="col-sm-2 col-xs-12">100.000</td>
+                                    <td class="col-sm-2 col-xs-12 state" value="thanhcong">Thành công</td>
+                                    <td class="col-sm-2 col-xs-12"><a href="#">Xem chi tiết</a></td>
                                 </tr>
                                 <tr class="row">
-                                    <td class="col-sm-6 col-xs-12">Thưởng bán hàng F6 từ Di0329255181</td>
-                                    <td class="col-sm-3 col-xs-12">10,000</td>
-                                    <td class="col-sm-3 col-xs-12">03/9/2019</td>
+                                    <td class="col-sm-6 col-xs-12">11/03/2020 09:06</td>
+                                    <td class="col-sm-2 col-xs-12">100.000</td>
+                                    <td class="col-sm-2 col-xs-12 state" value="thanhcong">Thành công</td>
+                                    <td class="col-sm-2 col-xs-12"><a href="#">Xem chi tiết</a></td>
                                 </tr>
                                 <tr class="row">
-                                    <td class="col-sm-6 col-xs-12">Thưởng bán hàng F6 từ Di0329255181</td>
-                                    <td class="col-sm-3 col-xs-12">10,000</td>
-                                    <td class="col-sm-3 col-xs-12">03/9/2019</td>
+                                    <td class="col-sm-6 col-xs-12">11/03/2020 09:06</td>
+                                    <td class="col-sm-2 col-xs-12">100.000</td>
+                                    <td class="col-sm-2 col-xs-12 state" value="thanhcong">Thành công</td>
+                                    <td class="col-sm-2 col-xs-12"><a href="#">Xem chi tiết</a></td>
                                 </tr>
                                 <tr class="row">
-                                    <td class="col-sm-6 col-xs-12">Thưởng bán hàng F6 từ Di0329255181</td>
-                                    <td class="col-sm-3 col-xs-12">10,000</td>
-                                    <td class="col-sm-3 col-xs-12">03/9/2019</td>
+                                    <td class="col-sm-6 col-xs-12">11/03/2020 09:06</td>
+                                    <td class="col-sm-2 col-xs-12">100.000</td>
+                                    <td class="col-sm-2 col-xs-12 state" value="thanhcong">Thành công</td>
+                                    <td class="col-sm-2 col-xs-12"><a href="#">Xem chi tiết</a></td>
                                 </tr>
                                 <tr class="row">
-                                    <td class="col-sm-6 col-xs-12">Thưởng bán hàng F6 từ Di0329255181</td>
-                                    <td class="col-sm-3 col-xs-12">10,000</td>
-                                    <td class="col-sm-3 col-xs-12">03/9/2019</td>
-                                </tr>
-                                <tr class="row">
-                                    <td class="col-sm-6 col-xs-12">Thưởng bán hàng F6 từ Di0329255181</td>
-                                    <td class="col-sm-3 col-xs-12">10,000</td>
-                                    <td class="col-sm-3 col-xs-12">03/9/2019</td>
-                                </tr>
-                                <tr class="row">
-                                    <td class="col-sm-6 col-xs-12">Thưởng bán hàng F6 từ Di0329255181</td>
-                                    <td class="col-sm-3 col-xs-12">10,000</td>
-                                    <td class="col-sm-3 col-xs-12">03/9/2019</td>
-                                </tr>
-                                <tr class="row">
-                                    <td class="col-sm-6 col-xs-12">Thưởng bán hàng F6 từ Di0329255181</td>
-                                    <td class="col-sm-3 col-xs-12">10,000</td>
-                                    <td class="col-sm-3 col-xs-12">03/9/2019</td>
-                                </tr>
-                                <tr class="row">
-                                    <td class="col-sm-6 col-xs-12">Thưởng bán hàng F6 từ Di0329255181</td>
-                                    <td class="col-sm-3 col-xs-12">10,000</td>
-                                    <td class="col-sm-3 col-xs-12">03/9/2019</td>
-                                </tr>
-                                <tr class="row">
-                                    <td class="col-sm-6 col-xs-12">Thưởng bán hàng F6 từ Di0329255181</td>
-                                    <td class="col-sm-3 col-xs-12">10,000</td>
-                                    <td class="col-sm-3 col-xs-12">03/9/2019</td>
-                                </tr>
-                                <tr class="row">
-                                    <td class="col-sm-6 col-xs-12">Thưởng bán hàng F6 từ Di0329255181</td>
-                                    <td class="col-sm-3 col-xs-12">10,000</td>
-                                    <td class="col-sm-3 col-xs-12">03/9/2019</td>
-                                </tr>
-                                <tr class="row">
-                                    <td class="col-sm-6 col-xs-12">Thưởng bán hàng F6 từ Di0329255181</td>
-                                    <td class="col-sm-3 col-xs-12">10,000</td>
-                                    <td class="col-sm-3 col-xs-12">03/9/2019</td>
-                                </tr>
-                                <tr class="row">
-                                    <td class="col-sm-6 col-xs-12">Thưởng bán hàng F6 từ Di0329255181</td>
-                                    <td class="col-sm-3 col-xs-12">10,000</td>
-                                    <td class="col-sm-3 col-xs-12">03/9/2019</td>
-                                </tr>
-                                <tr class="row">
-                                    <td class="col-sm-6 col-xs-12">Thưởng bán hàng F6 từ Di0329255181</td>
-                                    <td class="col-sm-3 col-xs-12">10,000</td>
-                                    <td class="col-sm-3 col-xs-12">03/9/2019</td>
-                                </tr>
-                                <tr class="row">
-                                    <td class="col-sm-6 col-xs-12">Thưởng bán hàng F6 từ Di0329255181</td>
-                                    <td class="col-sm-3 col-xs-12">10,000</td>
-                                    <td class="col-sm-3 col-xs-12">03/9/2019</td>
+                                    <td class="col-sm-6 col-xs-12">11/03/2020 09:06</td>
+                                    <td class="col-sm-2 col-xs-12">100.000</td>
+                                    <td class="col-sm-2 col-xs-12 state" value="thanhcong">Thành công</td>
+                                    <td class="col-sm-2 col-xs-12"><a href="#">Xem chi tiết</a></td>
                                 </tr>
 
                                 <tr class="row">
-                                    <th class="col-sm-6 col-xs-12 ">Tổng cộng</th>
-                                    <th class=" col-sm-3 col-xs-12">180,000</th>
-                                    <th class=" col-sm-3 col-xs-12"></th>
+                                    <th class="col-sm-6 col-xs-12">Tổng</th>
+                                    <th class="col-sm-2 col-xs-12">1.000.000</th>
+                                    <th class="col-sm-2 col-xs-12"></th>
+                                    <th class="col-sm-2 col-xs-12"></th>
+
                                 </tr>
+
+
                             </table>
                             <div class="table-pagination">
                                 <a href="#"> <i class="fas fa-long-arrow-alt-left    "></i> PREV</a>
@@ -246,15 +243,7 @@
                                 <a href="">8</a>
                                 <a href="">NEXT <i class="fas fa-long-arrow-alt-right    "></i></a>
                             </div>
-
-
                         </div>
-
-
-
-
-
-
                     </div>
                 </div>
             </div>

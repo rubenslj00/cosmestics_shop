@@ -61,7 +61,7 @@
             <div class="row">
                 <div class="menu col-sm-3">
 
-                    <div class="menu-item active">
+                    <div class="menu-item">
                         <i class="fas fa-home    "></i>
                         <span>TRANG CHỦ</span>
                         <a href="./home_page.html"></a>
@@ -91,18 +91,19 @@
                         <span>HOA HỒNG ĐƯỢC HƯỞNG</span>
                         <a href="./earned_page.html"></a>
                     </div>
-                    <div class="menu-item">
+                    <div class="menu-item ">
                         <i class="fas fa-user    "></i>
                         <span>LỊCH SỬ MUA HÀNG</span>
                         <a href="./shopping_history.html"></a>
                     </div>
-                    <div class="menu-item">
-                        <i class="fas fa-users"></i>
+
+                    <div class="menu-item ">
+                        <i class="fas fa-user    "></i>
                         <span>LỊCH SỬ NHÓM</span>
                         <a href="./group_history.html"></a>
                     </div>
 
-                    <div class="menu-item">
+                    <div class="menu-item active">
                         <i class="fas fa-envelope    "></i>
                         <span>TIN NHẮN</span>
                         <a href="./mail_box.html"></a>
@@ -115,49 +116,34 @@
 
                 </div>
                 <div class="content col-sm-9 col-xs-12">
-                    <div class="content__home">
-                        <div class="user__info responsive">
+                    <div class="content__mail">
+                        <div class="responsive">
                             <div class="row">
-                                <div class="user__info--login-time col-sm-4 col-xs-12">
-                                    <img src="./img/user_info/date_active.png" alt="date">
-                                    <div class="login-time__text">
-                                        <h5>NGÀY KÍCH HOẠT</h5>
-                                        <span>date time active here</span>
-                                    </div>
+                                <div class="mail-nav col-xs-12 col-sm-3">
+                                    <a href="./mail_box.html"><i class="fas fa-edit    "></i> Soạn thư</a>
 
+                                    <a href="./inbox.html" class="active"><i class="fas fa-inbox   "></i> Hộp thư
+                                        đến</a>
+                                    <a href="./sent.html"><i class="fas fa-paper-plane    "></i> Thư đã gửi</a>
                                 </div>
-                                <div class="user__info--login-time col-sm-4 col-xs-12">
-                                    <img src="./img/user_info/clock.png" alt="date">
-                                    <div class="login-time__text">
-                                        <h5>THỜI GIAN KÍCH HOẠT</h5>
-                                        <span>fafadsfd</span>
-                                    </div>
 
+                                <div class="mail-writing col-sm-9 col-xs-12" action="">
+                                    <span class="mail-writing__title"> Thư đã gửi </span>
+                                    <table>
+                                        <tr>
+                                            <th>Người nhận</th>
+                                            <th>Chủ đề</th>
+                                            <th>ngày gửi</th>
+                                        </tr>
+                                        <tr>
+                                            <td>Không có dữ liệu</td>
+                                            <td></td>
+                                            <td></td>
+                                        </tr>
+                                    </table>
                                 </div>
-                                <div class="user__info--login-time col-sm-4 col-xs-12">
-                                    <img src="./img/user_info/ic-wt1.png" alt="date">
-                                    <div class="login-time__text">
-                                        <h5>ĐỊA CHỈ IP</h5>
-                                        <span>fafadsfd</span>
-                                    </div>
 
-                                </div>
-                            </div>
-                        </div>
-                        <div class="user__info--rank">
-                            <div class="user-rank">
-                                <span>
-                                    <p>Cấp bậc</p>
-                                    <p class="rank">GOLD</p>
-                                </span>
-                                <span>
-                                    <p>Doanh số cá nhân</p>
-                                    <p class="revenue">200.140.000</p>
-                                </span>
-                                <span>
-                                    <p>Doanh số nhóm</p>
-                                    <p class="team-revenue">1.000.000.000</p>
-                                </span>
+
                             </div>
                         </div>
                     </div>
@@ -188,7 +174,13 @@
 
     </div>
     <script src="./js/jquery.js"></script>
+    <script src="./ckeditor/ckeditor.js"></script>
     <script src="./js/main.js"></script>
+
+    <script>
+        CKEDITOR.replace("editor1");
+    </script>
+
 </body>
 
 </html>

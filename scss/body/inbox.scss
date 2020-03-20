@@ -1,0 +1,31 @@
+.content__mail {
+  .mail-writing {
+    box-shadow: 0 0 10px #d6d6d6;
+    background-color: white;
+
+    .mail-writing__title {
+      display: block;
+      background-color: $light-green;
+      padding: 10px;
+      margin-bottom: 30px;
+    }
+
+    table {
+      padding: 10;
+      width: 100%;
+      th {
+        background-color: $dark-green;
+        width: 40%;
+        color: white;
+        padding: 10px;
+        text-align: left;
+      }
+      td {
+        padding: 10px;
+        text-align: left;
+        width: 30%;
+        color: black;
+      }
+    }
+  }
+}

@@ -4,8 +4,9 @@
 @import "./base/mixins.scss";
 
 @import "./layout/web-layout.scss";
-@import "./component/header.scss";
 
+@import "./component/header.scss";
+@import "./component/login_form.scss";
 @import "./component/nav.scss";
 @import "./component/content.scss";
 @import "./component/menu.scss";
@@ -19,3 +20,4 @@
 @import "./body/register.scss";
 @import "./body/tree_view.scss";
 @import "./body/update.scss";
+@import "./body/inbox.scss";

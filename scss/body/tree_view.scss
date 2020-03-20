@@ -1,5 +1,16 @@
+.content-tree__header {
+  height: 50px;
+  line-height: 50px;
+  background-color: $light-green;
+  color: white;
+  padding: 0 30px;
+  font-size: 1rem;
+}
+
 .content__tree {
+  background-color: white;
   color: $light-green;
+  padding: 20px;
   input[type="checkbox"] {
     background-color: $light-green;
     font-size: 1rem;
@@ -60,10 +71,16 @@
       border-style: solid;
       border-color: $light-green;
       height: 9999px;
-      bottom: calc(100% - 0.6rem);
+      bottom: calc(100% - 17px);
       left: -1.6rem;
       position: absolute;
     }
+  }
+  .user-info {
+    display: inline-block;
+    color: rgb(63, 63, 63);
+    padding: 8px 0;
+    cursor: pointer;
   }
 }
 
@@ -73,8 +90,27 @@
   background-color: white;
   position: fixed;
   opacity: 0;
+  width: 300px;
+  transform: translate(10px, -50%);
+  transition: 0.2s;
+  &:before {
+    content: "";
+    display: block;
+    transform: translateY(50%) rotate(45deg);
+    position: absolute;
+    left: -9px;
+    top: 50%;
+    width: 15px;
+    height: 15px;
+    border: 1px solid red;
+    background-color: white;
+    border-color: transparent transparent gray gray;
+  }
   * {
-    padding-left: 10px;
+    padding: 5px 10px;
+  }
+  h3 {
+    background-color: #f6f6f6;
   }
   h2 {
     font-size: 1.5rem;

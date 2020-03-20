@@ -6,7 +6,7 @@ navBtn.addEventListener("click", function() {
   menu.classList.toggle("active");
 });
 
-// date picker setup
+//date picker setup
 $(function() {
   $('input[name="from_date"]').daterangepicker({
     singleDatePicker: true,
@@ -23,14 +23,11 @@ $(function() {
 const userPopup = document.querySelector(".info-popover");
 const user = document.querySelectorAll(".user-info");
 
-console.log(userPopup);
-
 user.forEach(function(item) {
-  console.log(user);
   item.addEventListener("mouseover", function(e) {
-    item.clientLeft;
-    x = e.clientX;
-    y = e.clientY;
+    //hàm bounding client rect dùng để lấy thông tin tọa độ tuyệt đối của thẻ html
+    x = item.getBoundingClientRect().x + item.getBoundingClientRect().width;
+    y = item.getBoundingClientRect().y;
     userPopup.style.top = `${y}px`;
     userPopup.style.left = `${x}px`;
     userPopup.style.opacity = "1";
@@ -44,11 +41,10 @@ user.forEach(function(item) {
 
     // tao the html chua du lieu
     let popupContent = `<h3 class="user-info-name">${fullname}</h3>
-    <p class="user-info-username">${username}</p>
-    <p class="user-info-rank">${rank}</p>
-    <p class="user-info-money">${money}</p>
-    hello
-    <p class="user-info-address">${address}</p>`;
+    <p class="user-info-username">Họ và tên: ${username}</p>
+    <p class="user-info-rank">Cấp bậc: ${rank}</p>
+    <p class="user-info-money">Tiền đầu tư: ${money}</p>
+    <p class="user-info-address">Địa chỉ: ${address}</p>`;
     //append the vua tao vao pop up
     userPopup.innerHTML = popupContent;
   });
