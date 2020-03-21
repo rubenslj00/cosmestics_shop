@@ -36,6 +36,7 @@
       padding: 10px;
       border: 1px solid #e2f2ff;
       box-shadow: $beauty-shadow;
+      font-size: 0.85rem;
       h3 {
         color: orange;
         margin-bottom: 10px;
@@ -77,6 +78,82 @@
       font-size: 1rem;
       padding: 0;
       color: white !important;
+    }
+  }
+}
+
+/// cart sytle
+
+.header-right__cart {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  .cart {
+    top: calc(100% + 10px);
+    position: absolute;
+    width: 400px;
+    background-color: white;
+    border: 1px solid rgb(192, 192, 192);
+    display: none;
+
+    &:before {
+      content: "";
+      display: block;
+      position: absolute;
+      top: -7px;
+      left: 30px;
+      width: 10px;
+      height: 10px;
+      transform: rotate(45deg);
+      border-color: gray transparent transparent gray;
+      background-color: white;
+      border-style: solid;
+      border-width: 1px;
+    }
+
+    &.active {
+      display: block;
+    }
+    .cart-header {
+      padding: 10px;
+      color: black;
+      display: flex;
+      justify-content: space-between;
+      border-bottom: 1px solid rgb(197, 197, 197);
+    }
+    .cart-item {
+      padding: 15px;
+      display: flex;
+      border-bottom: 1px solid rgb(196, 196, 196);
+      align-items: center;
+
+      img {
+        display: inline-block;
+        height: 60px;
+        object-fit: contain;
+      }
+      .item-detail {
+        display: inline-block;
+        color: black;
+        margin-left: 15px;
+        button {
+          border: none;
+          color: red;
+          font-size: 0.8rem;
+          padding: 0;
+          margin-top: 6px;
+          &:hover {
+            background-color: white;
+          }
+        }
+      }
+    }
+    .show-cart {
+      background-color: $dark-green;
+      color: white;
+      text-align: center;
+      padding: 10px 0;
     }
   }
 }

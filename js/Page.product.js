@@ -6,6 +6,9 @@ moreBtn.forEach(item => {
     e.stopPropagation();
     console.log(this);
     Swal.fire({
+      customClass: {
+        popup: "success-popup"
+      },
       position: "top-end",
       icon: "",
       title: "Thông báo </br> Bạn đã thêm thành công sản phẩm vào giỏ",

@@ -99,3 +99,34 @@ productIncrementBtn.forEach(item => {
     incrProduct(this);
   });
 });
+
+// cart header
+
+const cartBtn = document.querySelector(".header-right__cart");
+const cartList = document.querySelector(".cart");
+
+cartBtn.addEventListener("click", function() {
+  cartList.classList.toggle("active");
+});
+
+/// delete product button
+
+const deleteBtn = document.querySelectorAll(".item-detail button");
+console.log(deleteBtn);
+deleteBtn.forEach(item => {
+  item.addEventListener("click", function() {
+    Swal.fire({
+      title: "Bạn muốn xóa sản phẩm khỏi giỏ hàng?",
+      icon: "warning",
+      showCancelButton: true,
+      confirmButtonColor: "#3085d6",
+      cancelButtonColor: "#d33",
+      confirmButtonText: "Có!",
+      cancelButtonText: "Không"
+    }).then(result => {
+      if (result.value) {
+        Swal.fire("Đã xóa!", "Sản phẩm đã xóa khỏi giỏ hàng.", "success");
+      }
+    });
+  });
+});

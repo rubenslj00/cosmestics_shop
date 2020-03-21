@@ -139,3 +139,12 @@
     }
   }
 }
+
+.calendar-icon {
+  font-size: 1rem !important;
+  color: black !important;
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-11px);
+}
