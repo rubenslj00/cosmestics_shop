@@ -53,3 +53,49 @@ user.forEach(function(item) {
     userPopup.style.opacity = "0";
   });
 });
+
+////date time header
+
+const dateHeader = document.querySelector(".header-left__date-time");
+
+function getTime() {
+  let date = new Date();
+  let clock = date.toTimeString().split(" ")[0];
+  let month = date.getMonth() + 1;
+  let day = date.getDate();
+  let year = date.getFullYear();
+  dateHeader.textContent = day + "." + month + "." + year + " " + clock;
+}
+
+let count = setInterval(function() {
+  getTime();
+}, 1000);
+getTime();
+
+/// product increment
+let productIncrementBtn = document.querySelectorAll(".incrBtn");
+let productDescrementBtn = document.querySelectorAll(".descBtn");
+
+function descProduct(item) {
+  let count = parseInt(item.parentNode.childNodes[3].value);
+  if (count > 0) {
+    item.parentNode.childNodes[3].value = count - 1;
+  }
+}
+
+function incrProduct(item) {
+  let count = parseInt(item.parentNode.childNodes[3].value);
+  item.parentNode.childNodes[3].value = count + 1;
+}
+
+productDescrementBtn.forEach(item => {
+  item.addEventListener("click", function() {
+    let count = descProduct(this);
+  });
+});
+
+productIncrementBtn.forEach(item => {
+  item.addEventListener("click", function() {
+    incrProduct(this);
+  });
+});

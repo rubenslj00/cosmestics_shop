@@ -84,7 +84,7 @@
       }
     }
     button {
-      margin-top: 30px;
+      margin-top: 0;
       letter-spacing: 1px;
       @include main-btn;
     }
@@ -93,6 +93,7 @@
     width: 100%;
     text-align: left;
     padding: 20px;
+    padding-top: 0;
 
     .row {
       &:first-child {
@@ -111,7 +112,7 @@
     }
   }
   .table-pagination {
-    padding: 20px 30px;
+    padding: 0 20px 30px 20px;
     a {
       color: gray;
       font-size: 0.7rem;

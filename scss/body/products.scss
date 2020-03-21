@@ -66,3 +66,17 @@
     }
   }
 }
+
+///popup style
+
+.swal2-popup {
+  width: 400px;
+  background-color: rgb(250, 104, 0) !important;
+  .swal2-header {
+    #swal2-title {
+      font-size: 1rem;
+      padding: 0;
+      color: white !important;
+    }
+  }
+}
