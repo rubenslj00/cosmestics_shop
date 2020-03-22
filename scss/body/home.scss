@@ -5,13 +5,16 @@
     margin-bottom: 30px;
     .row {
       .user__info--login-time {
+        display: -webkit-box;
         display: flex;
         padding: 15px;
+        -webkit-box-align: center;
         align-items: center;
         img {
           height: 60px;
           width: 60px;
           display: block;
+          -o-object-fit: cover;
           object-fit: cover;
           background-color: $light-green;
           padding: 5px;
@@ -36,8 +39,10 @@
     background-color: white;
     .user-rank {
       span {
+        display: -webkit-box;
         display: flex;
         padding: 20px;
+        -webkit-box-pack: justify;
         justify-content: space-between;
         p:first-child {
           padding-right: 30px;

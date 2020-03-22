@@ -6,6 +6,7 @@
     border-collapse: collapse;
     border: 1px solid gray;
     tr {
+      display: -webkit-box;
       display: flex;
       width: 100%;
       height: 60px;
@@ -18,6 +19,7 @@
         text-align: left;
         &:nth-child(1) {
           width: 50px;
+          -webkit-box-flex: 1;
           flex: 1;
         }
         &:nth-child(2) {
@@ -33,9 +35,11 @@
           width: 95px;
           border-right: none;
         }
+        display: -webkit-box;
         display: flex;
         img {
           height: 100%;
+          -o-object-fit: contain;
           object-fit: contain;
           display: block;
         }
@@ -44,6 +48,7 @@
           padding-left: 10px;
         }
         .product-count {
+          display: -webkit-box;
           display: flex;
           height: 25px;
           border: 1px solid gray;
@@ -84,6 +89,7 @@
       }
 
       &.payment {
+        display: -webkit-box;
         display: flex;
         height: 40px;
         th {
